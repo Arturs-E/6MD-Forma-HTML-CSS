@@ -1,5 +1,4 @@
 # 6MD-Forma-HTML-CSS
-Uztaisīt formu sekojot dizainam
 Uzdevums
 Uztaisīt formu sekojot dizainam https://www.figma.com/file/2m4YRwA6BhI7qtIkLjMcJg/MD4?node-id=0%3A1
 
