@@ -14,15 +14,82 @@
         alt="Picture of a software developer working"
         class="form-image"
       />
-
-        <form action="" class="form-wrapper">
-          <button type="button" class="btn button--sign-in-with-google">
-            Sign in with Google
-          </button>
-          <button type="button" class="btn button--sign-in-with-apple">
-            Sign in with Apple
-          </button>
-
+      <form action="" class="form form-wrapper">
+        <button type="button" class="button button--sign-in-with-google">
+          Sign in with Google
+        </button>
+        <button type="button" class="button button--sign-in-with-apple">
+          Sign in with Apple
+        </button>
+        <section class="horizontal-divider">
+          <div class="horizontal-divider__line"></div>
+          <span class="horizontal-divider__text">or</span>
+          <div class="horizontal-divider__line"></div>
+        </section>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="form__input"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          class="form__input"
+          required
+        />
+        <input
+          type="text"
+          name="first-name"
+          id="firstname"
+          placeholder="First name"
+          class="form__input"
+          required
+        />
+        <input
+          type="text"
+          name="last-name"
+          id="lastname"
+          placeholder="Last name"
+          class="form__input"
+          required
+        />
+        <div>
+          <input type="radio" name="gender" id="gender1" value="female" />
+          <label for="gender1" class="form__label">Female</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="gender2" value="male" />
+          <label for="gender2" class="form__label">Male</label>
+        </div>
+        <input
+          type="date"
+          name="birthdate"
+          id="birthdate"
+          class="form__input"
+        />
+        <select name="country" id="country" class="form__input">
+          <option value="" disabled selected hidden>Country</option>
+          <option value="latvia">Latvia</option>
+          <option value="estonia">Estonia</option>
+          <option value="lithuania">Lithuania</option>
+        </select>
+        <section class="checkbox-wrapper">
+          <div>
+            <input type="checkbox" name="subscribe-news" id="subscribe-news" />
+            <label for="subscribe-news">Subscribe to News</label>
+          </div>
+          <div>
+            <input type="checkbox" name="sell-soul" id="sell-soul" />
+            <label for="sell-soul">Sell soul to the Devil</label>
+          </div>
+        </section>
+        <button type="button" class="button">Join us</button>
+      </form>
     </article>
   </body>
 </html>
