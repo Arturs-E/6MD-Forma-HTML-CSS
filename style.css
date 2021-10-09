@@ -14,11 +14,11 @@ font-family: 'Roboto', sans-serif; */
 
 .global-container {
   display: grid;
-  /* grid-template-columns: auto auto; */
-  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  grid-template-columns: auto auto;
+  /* grid-template-columns: repeat(auto-fit, minmax(360px, auto)); */
   justify-items: stretch;
   align-items: center;
-  transition: grid-template-columns 1s;
+  padding: 40px 30px;
 }
 
 .form-image {
@@ -47,12 +47,17 @@ font-family: 'Roboto', sans-serif; */
   align-content: start;
 }
 
-/* Input lauki nepārmantoja */
-/* .form {
-  font-size: 16px;
-  line-height: 22px;
-  color: #111113;
-} */
+@media screen and (max-width: 1200px) {
+  .form-image,
+  .form-wrapper {
+    grid-column: 1 / -1;
+  }
+
+  .form-image {
+    width: auto;
+    max-height: 500px;
+  }
+}
 
 .button {
   width: 100%;
@@ -82,6 +87,15 @@ font-family: 'Roboto', sans-serif; */
   background-color: #d7503f;
 }
 
+.button--join {
+  margin-bottom: 16px;
+}
+
+.button--join:active {
+  background-color: #d7503f;
+  color: #fff;
+}
+
 .horizontal-divider {
   display: flex;
   justify-content: center;
@@ -104,7 +118,7 @@ font-family: 'Roboto', sans-serif; */
 
 .form__input {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: #111113;
   padding: 13px 16px;
   border: 1px solid #111113;
@@ -114,10 +128,31 @@ font-family: 'Roboto', sans-serif; */
 .form__label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   color: #000;
 }
 
 .checkbox-wrapper {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 26px;
+  justify-content: space-between;
+}
+
+.sign-in__already-member {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(17, 17, 19, 0.6);
+  justify-self: center;
+}
+
+.sign-in__link,
+.sign-in__link:visited {
+  color: #000;
+  text-decoration: underline;
+}
+
+.sign-in__link:hover {
+  color: #d7503f;
 }

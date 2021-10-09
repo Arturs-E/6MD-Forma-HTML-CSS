@@ -18,9 +18,7 @@
         <button type="button" class="button button--sign-in-with-google">
           Sign in with Google
         </button>
-        <button type="button" class="button button--sign-in-with-apple">
-          Sign in with Apple
-        </button>
+        <button type="button" class="button">Sign in with Apple</button>
         <section class="horizontal-divider">
           <div class="horizontal-divider__line"></div>
           <span class="horizontal-divider__text">or</span>
@@ -70,6 +68,7 @@
           type="date"
           name="birthdate"
           id="birthdate"
+          placeholder="Birth year"
           class="form__input"
         />
         <select name="country" id="country" class="form__input">
@@ -81,14 +80,22 @@
         <section class="checkbox-wrapper">
           <div>
             <input type="checkbox" name="subscribe-news" id="subscribe-news" />
-            <label for="subscribe-news">Subscribe to News</label>
+            <label for="subscribe-news" class="form__label"
+              >Subscribe to News</label
+            >
           </div>
           <div>
             <input type="checkbox" name="sell-soul" id="sell-soul" />
-            <label for="sell-soul">Sell soul to the Devil</label>
+            <label for="sell-soul" class="form__label"
+              >Sell soul to the Devil</label
+            >
           </div>
         </section>
-        <button type="button" class="button">Join us</button>
+        <button type="button" class="button button--join">Join us</button>
+        <p class="sign-in__already-member">
+          Already a member?
+          <span><a href="#" class="sign-in__link">Sign in.</a></span>
+        </p>
       </form>
     </article>
   </body>
