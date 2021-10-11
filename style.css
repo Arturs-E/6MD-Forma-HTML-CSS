@@ -126,13 +126,13 @@ color as the other placeholders */
   background-position: right 16px top 15px, 0 0;
 }
 
-.select__option,
-.select__option option {
+.input__select,
+.input__select option {
   color: #111113;
 }
 
-.select__option:invalid,
-.select__option option[value=""] {
+.input__select:invalid,
+.input__select option[value=""] {
   color: #757575;
 }
 
