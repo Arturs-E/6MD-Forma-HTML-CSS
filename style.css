@@ -75,8 +75,13 @@ Form fields
   line-height: 22px;
   color: #111113;
   padding: 13px 16px;
-  border: 1px solid #111113;
+  border: 1px solid rgba(17, 17, 19, 0.2);
   border-radius: 4px;
+}
+
+.form__input:focus {
+  border: 1px solid #111113;
+  box-shadow: 0px 0px 5px 1px #757575;
 }
 
 .form__label {
@@ -87,15 +92,47 @@ Form fields
   color: #000;
 }
 
+.custom-form-label-date {
+  position: relative;
+}
+
+.form__input--date {
+  width: 100%;
+  /* padding-inline-start: 0; */
+}
+
+.form__input--date[type="date"]::-webkit-inner-spin-button,
+.form__input--date[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  background-color: transparent;
+  opacity: 0;
+  z-index: 1;
+}
+
+.svg-calendar {
+  width: 22px;
+  position: absolute;
+  right: 16px;
+  top: 15px;
+}
+
 /* Styles the first (disabled) select option in the same 
 color as the other placeholders */
-.select__option--first,
-.select__option--first option {
+.input__select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(./assets/svg/Arrow_Down.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px top 15px, 0 0;
+}
+
+.select__option,
+.select__option option {
   color: #111113;
 }
 
-.select__option--first:invalid,
-.select__option--first option[value=""] {
+.select__option:invalid,
+.select__option option[value=""] {
   color: #757575;
 }
 
@@ -290,10 +327,14 @@ Custom radio buttons and checkmarks
 Media queries
 ///////////////////////////////////// */
 @media screen and (max-width: 1200px) {
-  .form-image,
+  .global-container {
+    grid-template-columns: auto;
+  }
+
+  /* .form-image,
   .form-wrapper {
     grid-column: 1 / -1;
-  }
+  } */
 
   .form-image {
     width: auto;

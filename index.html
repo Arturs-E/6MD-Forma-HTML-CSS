@@ -15,6 +15,7 @@
         class="form-image"
       />
       <form action="" class="form form-wrapper">
+        <!-- Buttons -->
         <button
           type="button"
           class="button button--icon button--sign-in-with-google"
@@ -48,11 +49,15 @@
           </svg>
           Sign in with Apple
         </button>
+
+        <!-- Divider -->
         <section class="horizontal-divider">
           <div class="horizontal-divider__line"></div>
           <span class="horizontal-divider__text">or</span>
           <div class="horizontal-divider__line"></div>
         </section>
+
+        <!-- Text input fields -->
         <input
           type="email"
           name="email"
@@ -85,6 +90,7 @@
           class="form__input"
           required
         />
+
         <!-- Radio buttons -->
         <label class="custom-input-container form__label"
           >Female
@@ -109,17 +115,29 @@
           />
           <span class="radio-checkmark"></span>
         </label>
-        <input
-          type="date"
-          name="birthdate"
-          id="birthdate"
-          placeholder="Date of Birth"
-          class="form__input form__input--date"
-        />
+
+        <!-- Date input -->
+        <label class="custom-form-label-date">
+          <input
+            placeholder="Date of Birth"
+            type="text"
+            onfocus="(this.type = 'date')"
+            name="birthdate"
+            id="birthdate"
+            class="form__input form__input--date"
+          />
+          <img
+            src="./assets/svg/Calendar.svg"
+            alt="Calendar icon"
+            class="svg-calendar"
+          />
+        </label>
+
+        <!-- Select input -->
         <select
           name="country"
           id="country"
-          class="form__input select__option--first"
+          class="form__input input__select"
           required
         >
           <option value="" disabled selected hidden>Country</option>
@@ -127,6 +145,7 @@
           <option value="estonia">Estonia</option>
           <option value="lithuania">Lithuania</option>
         </select>
+
         <!-- Checkboxes -->
         <section class="checkbox-wrapper">
           <label class="custom-input-container form__label"
@@ -140,6 +159,8 @@
             <span class="checkbox-checkmark"></span>
           </label>
         </section>
+
+        <!-- Join us button -->
         <button type="submit" class="button button--icon button--join">
           Join us
           <span class="button--icon">&#10140;</span>
