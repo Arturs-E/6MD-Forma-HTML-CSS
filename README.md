@@ -1,4 +1,9 @@
 # 6MD-Forma-HTML-CSS
+
+---
+You can view the project here - https://arturs-e.github.io/6MD-Forma-HTML-CSS/
+---
+
 Uzdevums
 Uztaisīt formu sekojot dizainam https://www.figma.com/file/2m4YRwA6BhI7qtIkLjMcJg/MD4?node-id=0%3A1
 
